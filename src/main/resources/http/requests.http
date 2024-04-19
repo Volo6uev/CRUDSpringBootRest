@@ -1,0 +1,28 @@
+POST localhost:8080/product
+Content-Type: application/json
+
+{
+  "id": "f8c3de3d-1fea-4d7c-a8b0-29f63c4c3452",
+  "name": "Two",
+  "cost": 5,
+  "amount": 12
+}
+
+###
+
+GET localhost:8080/product
+
+###
+
+PUT localhost:8080/product/f8c3de3d-1fea-4d7c-a8b0-29f63c4c3452
+Content-Type: application/json
+
+{
+  "name": "Two",
+  "cost": 45000,
+  "amount": 9
+}
+
+###
+
+DELETE localhost:8080/product/f8c3de3d-1fea-4d7c-a8b0-29f63c4c3452
